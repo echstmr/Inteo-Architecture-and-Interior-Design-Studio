@@ -21,9 +21,11 @@
              },
              colors:{
                 primary: '#996830',
+                primary300: '#C4A386',
                 hvr: '#795123',
                 neutral: '#2C2C2C',
-                neutral700: '#444444'
+                neutral700: '#444444',
+                pclrwhite: '#D9D9D6'
             },          
            }
           }
@@ -32,7 +34,7 @@
 </head>
 <body>
     <!-- HEADER/NAVBAR -->
-   <header class="container px-2 md:px-1 flex items-center justify-between h-[100px]">
+    <header class="container px-2 md:px-1 flex items-center justify-between h-[100px]">
         <!-- logo -->
          <div>
             <img src="./assets/img/INTeo.png" class="max-w-[100px]" alt="logo">
@@ -95,6 +97,45 @@
         </div>
      </div>
      <!-- AWARDS SECTION -->
+      <div class="w-full h-full xl:h-[128px] max-h-[100%]
+       min-h-[100%] bg-neutral flex items-center justify-center px-2 xl:px-10 py-10 md:py-0 ">
+        <div class="flex md:items-center items-start gap-10">
+        <div class="flex items-center pt-5 md:pt-0">
+          <h4 class="text-2xl md:text-3xl rotate-90 text-primary300 font-light"><i>Awards</i></h4>
+          <div class="w-[40px] md:w-[64px] h-[1px] bg-primary300 "></div>
+        </div>
+          <!-- awards list -->
+           <div class="grid gap-4 md:gap-8 xl:gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+           <div class="flex items-center gap-4 text-pclrwhite">
+              <img src="./assets/img/award1.png" alt="1">
+              <div class="flex flex-col">
+                <p>Gold A’ Design Award</p>
+                <p>2021</p>
+              </div>
+          </div>
+          <div class="flex items-center gap-4 text-pclrwhite">
+              <img src="./assets/img/award2.png" alt="2">
+              <div class="flex flex-col">
+                <p>German Design Award</p>
+                <p>2021</p>
+              </div>
+          </div>
+          <div class="flex items-center gap-4 text-pclrwhite">
+              <img src="./assets/img/award3.png" alt="3">
+              <div class="flex flex-col">
+                <p>Good Design Award</p>
+                <p>2019</p>
+              </div>
+          </div>
+          <div class="flex items-center gap-4 text-pclrwhite">
+              <img src="./assets/img/award4.png" alt="4">
+              <div class="flex flex-col">
+                <p>IF Design Award</p>
+                <p>2020</p>
+              </div>
+          </div>
+      </div>
+      </div>
     
    <script src="./assets/js/app.js"></script>
 </body>
