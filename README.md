@@ -1,1 +1,1 @@
-# Inteo---Architecture-and-Interior-Design-Studio
+# Inteo-Architecture-and-Interior-Design-Studio
