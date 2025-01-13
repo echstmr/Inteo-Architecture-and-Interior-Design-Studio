@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteo</title>
+    <!-- CSS File -->
+
+     <!-- Links -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             container:{
+                center: true,
+             },
+             colors:{
+                primary: '#996830',
+                neutral: '#2C2C2C',
+                neutral700: '#444444'
+            }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <!-- header/navbar -->
+   <header class="container px-2 md:px-0 flex items-center justify-between h-[100px]">
+        <!-- logo -->
+         <div>
+            <img src="./assets/img/INTeo.png" class="max-w-[100px]" alt="logo">
+         </div>
+         <!-- nav links -->
+          <ul class="flex items-center gap-[40px] hidden md:flex
+           uppercase font-medium text-neutral700" >
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Ourwork</a></li>
+             <!-- button -->
+             <div>
+                <button class="button w-[138px] h-[44px] text-white
+                  bg-primary flex  justify-center items-center"
+                >Contact <span class="text-[25px] rotate-45"><i class='bx bx-up-arrow-alt'></i></span>
+                </button>
+            </div>
+          </ul>
+          <!-- mob nav links-->
+          <ul id="navLinks" class="flex flex-col absolute top-[-100%] left-0 right-0' mx-auto md:hidden
+            w-full h-[60vh] items-center justify-center gap-[40px] bg-neutral
+            uppercase font-medium text-white" >
+             <li><a href="#">About</a></li>
+             <li><a href="#">Services</a></li>
+             <li><a href="#">Ourwork</a></li>
+             <span class="absolute top-4 right-5 text-[28px]" id="closeIcon">
+                <i class='bx bx-x'></i>
+            </span>
+            <!-- button -->
+            <div>
+                <button class="button w-[138px] h-[44px] text-white
+                  bg-primary flex  justify-center items-center"
+                >Contact <span class="text-[25px] rotate-45"><i class='bx bx-up-arrow-alt'></i></span>
+                </button>
+            </div>
+         </ul>  
+            
+          <!-- menu icon -->
+          <div class="flex md:hidden" id="menuIcon">
+            <span class="text-[45px]">
+                <i class='bx bx-menu-alt-right'></i>
+            </span>
+          </div>
+   </header>
+    
+   <script src="./assets/js/app.js"></script>
+</body>
+</html>
