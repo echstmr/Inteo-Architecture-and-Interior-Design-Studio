@@ -32,7 +32,7 @@
 </head>
 <body>
     <!-- HEADER/NAVBAR -->
-   <header class="container px-2 md:px-0 flex items-center justify-between h-[100px]">
+   <header class="container px-2 md:px-1 flex items-center justify-between h-[100px]">
         <!-- logo -->
          <div>
             <img src="./assets/img/INTeo.png" class="max-w-[100px]" alt="logo">
@@ -53,12 +53,13 @@
           </ul>
           <!-- mob nav links-->
           <ul id="navLinks" class="flex flex-col absolute top-[-100%] left-0 right-0' mx-auto md:hidden
-            w-full h-[60vh] items-center justify-center gap-[40px] bg-neutral
+            w-full h-[60vh] items-center justify-center gap-[40px] bg-neutral z-10
             uppercase font-medium text-[white]" >
              <li><a href="#">About</a></li>
              <li><a href="#">Services</a></li>
              <li><a href="#">Ourwork</a></li>
-             <span class="absolute top-4 right-5 text-[28px]" id="closeIcon">
+             <!-- Close Icon -->
+             <span class="absolute top-4 right-5 text-[35px] cursor-pointer" id="closeIcon">
                 <i class='bx bx-x'></i>
             </span>
             <!-- button -->
@@ -71,12 +72,12 @@
          </ul>  
           <!-- menu icon -->
           <div class="flex md:hidden" id="menuIcon">
-            <span class="text-[45px]">
+            <span class="text-[45px] cursor-pointer">
                 <i class='bx bx-menu-alt-right'></i>
             </span>
           </div>
    </header>
-        <!-- HERO TITLE -->
+        <!-- HERO SECTION -->
     <div class="px-2 md:px-0 text-center">
         <h1 class="xl:text-7xl md:text-6xl text-5xl mt-10 font-serif font-medium">Make <i>your home</i> an ode to joy</h1>
         <p class="xl:text-[20px] md:text-[18px] md:w-[800px] w-full mx-auto
@@ -84,9 +85,16 @@
          We turn your empty house to a lovely home, making the compact spaces  with sapce saving furnitures. Making the unique tastes of yours into reality! </p>
     </div>
     <!-- hero img -->
-     <div class="w-full h-[600px] mt-[50px]">
+     <div class="w-full h-[640px] mt-[100px] relative">
         <img src="./assets/img/hero-image.png" class="object-cover object-center w-full h-full" alt="">
+        <div hidden class="xl:flex"><img src="./assets/img/get-in-touch.png" 
+          class="absolute top-[-80px] left-[70px] w-[130px] getInTouch" alt="get in touch ">
+        </div>
+        <div class="xl:hidden ">
+          <img src="./assets/img/get-in-touch.png" class=" getInTouch w-[130px] mx-auto absolute top-[-80px] right-0  left-0" alt="get in touch">
+        </div>
      </div>
+     <!-- AWARDS SECTION -->
     
    <script src="./assets/js/app.js"></script>
 </body>
