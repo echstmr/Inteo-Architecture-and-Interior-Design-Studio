@@ -2,6 +2,7 @@
 
 body, html{
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 .getInTouch {
     animation: spin 10s linear infinite !important;

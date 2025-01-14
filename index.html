@@ -43,9 +43,9 @@
          <!-- nav links -->
           <ul class="flex items-center gap-[40px] hidden md:flex
            uppercase font-medium text-neutral700" >
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Ourwork</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#servics">Services</a></li>
+            <li><a href="#work">Ourwork</a></li>
              <!-- button -->
              <div>
                 <button class="button w-[138px] h-[44px] text-white
@@ -139,7 +139,7 @@
         </div>
       </div>
       <!-- ABOUT SECTION -->
-       <div class="grid grid-cols-1 md:grid-cols-2 md:gap-0 gap-[50px]
+       <div id="about" class="grid grid-cols-1 md:grid-cols-2 md:gap-0 gap-[50px]
        place-items-center container mx-auto py-[100px] ">
         <!-- Title About -->
          <div class="px-2">
@@ -147,7 +147,7 @@
             <div class="w-[80px] h-[1px] bg-primary300"></div> 
             <h4 class="font-[500] text-primary">ABOUT US</h4>
          </div>
-         <h1 class="text-3xl md:text-5xl  mt-5 font-[500] font-serif">
+         <h1 class="text-3xl md:text-5xl  mt-5 font-[500] font-serif text-neutral">
             We help to bring <i>your dream home</i>to reality
          </h1>
          <p class="text-[18px] xl:text-[20px] text-neutral700 my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam. Erat id laoreet posuere etiam morbi.</p>
@@ -182,6 +182,116 @@
         <h4 class="text-[16px] md:text-[20px] font-serif font-[500]">PROJECTS COMPLETED <br>ON 60 COUNTRIES</h4>
     </div>
 </div>
+<!-- SERVICES SECTION -->
+  <div class="container px-2 mt-[100px]">
+    <div>
+      <div class="flex items-center gap-3">
+        <div class="w-[80px] h-[1px] bg-primary300"></div> 
+        <h4 class="font-[500] text-primary">OUR SERVICES</h4>
+      </div>
+      <h1 class="text-3xl md:text-5xl mt-5 w-full md:w-[650px]
+       font-[500] font-serif overflow-hidden text-neutral">
+       We provide the<i>best solutions</i> <br>
+       for your dream home</h1>
+      </div>
+      <!-- services -->
+       <div class="flex md:justify-center gap-5 overflow-x-auto my-20">
+          <!-- services 1 -->
+           <div class="flex flex-col w-full min-w-[384px] max-w-[384px] max-h-[416px] border border-primary/50 p-4">
+            <div>
+              <img src="./assets/img/Service Icon.png" class="my-4" alt="services01">
+            </div>
+            <div>
+              <h4 class="text-2xl md:text-3xl">Architectural <br> & Interior design</h4>
+              <p class="my-8">Non diam pretium tristique augue placerat dolor.
+                 Accumsan nibh nunc, molestie volutpat ipsum, ultricies.z</p>
+            </div>
+              
+           </div>
+          <!-- services 1 -->
+           <div class="flex flex-col  w-full min-w-[384px] max-w-[384px] max-h-[416px] border border-primary/50 p-4">
+            <div>
+              <img src="./assets/img/Service Icon-1.png" class="my-4" alt="services01">
+            </div>
+            <div>
+              <h4 class="text-2xl md:text-3xl">Building <br> & Renovation</h4>
+              <p class="my-8">Non diam pretium tristique augue placerat dolor.
+                 Accumsan nibh nunc, molestie volutpat ipsum, ultricies.z</p>
+            </div>
+              
+           </div>
+          <!-- services 1 -->
+           <div class="flex flex-col  w-full min-w-[384px] max-w-[384px] max-h-[416px] border border-primary/50 p-4">
+            <div>
+              <img src="./assets/img/Service Icon-2.png" class="my-4" alt="services03">
+            </div>
+            <div>
+              <h4 class="text-2xl md:text-3xl">Renovation <br> & Management</h4>
+              <p class="my-8">Non diam pretium tristique augue placerat dolor.
+                 Accumsan nibh nunc, molestie volutpat ipsum, ultricies.z</p>
+            </div>
+              
+           </div>
+       </div>
+    </div>
+    <!--RECENT WORKS SECTION -->
+    <div class="container px-2 grid grid-cols-1 border-b pb-10
+     xl:grid-cols-2 place-items-center overflow-hidden">
+      <div>
+        <!-- Title Recent -->
+        <div >
+          <div class="flex items-center gap-3">
+            <div class="w-[80px] h-[1px] bg-primary300"></div> 
+            <h4 class="font-[500] text-primary">OUR SERVICES</h4>
+          </div>
+          <h1 class="text-3xl md:text-5xl mt-5 w-full md:w-[650px]
+           font-[500] font-serif overflow-hidden text-neutral">
+           Some of <i>our crafts</i> <br>
+           made with love</h1>
+        </div>
+        <div class="my-[60px]">
+          <img src="./assets/img/works.png" class="w-full xl:w-[592px]">
+          <div class="my-2">
+            <h4 class="text-2xl md:text-3xl font-medium text-neutral my-2">Villa Furnishing & Interior</h4>
+            <p class="text-[16px] md:text-[18px] text-neutral700 w-full xl:w-[500px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+               Faucibus fringilla dui amet faucibus nam. Erat id laoreet posuere etiam morbi.</p>
+          </div>
+
+          <div class="my-0 xl:my-20">
+            <button class="button w-[158px] h-[44px] text-white cursor-pointer
+              bg-primary hover:bg-hvr flex justify-center items-center hidden xl:flex"
+            >Contact <span class="text-[25px] rotate-45 flex"><i class='bx bx-up-arrow-alt'></i></span>
+            </button>
+        </div>
+        </div>
+      </div>
+      <!-- cols 2 -->
+       <div class="flex flex-col">
+        <div class="my-0 xl:my-[30px]">
+          <img src="./assets/img/works2.png" class="w-full xl:w-[480px]">
+          <div class="my-2">
+            <h4 class="text-2xl md:text-3xl font-medium text-neutral my-2">Luxury Hotel Renovations</h4>
+            <p class="text-[16px] md:text-[18px] text-neutral700 w-full xl:w-[500px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+               Faucibus fringilla dui amet br faucibus nam. Erat id laoreet posuere etiam morbi.</p>
+          </div>
+       </div>
+        <div class="my-[30px]">
+          <img src="./assets/img/works3.png" class="w-full xl:w-[480px]">
+          <div class="my-2">
+            <h4 class="text-2xl md:text-3xl font-medium text-neutral my-2">Luxury Hotel Renovation</h4>
+            <p class="text-[16px] md:text-[18px] text-neutral700 w-full xl:w-[500px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Faucibus fringilla dui amet faucibus nam. Erat id laoreet posuere etiam morbi.</p>
+          </div>
+       </div>
+       <div class="my-30">
+        <button class="button w-[158px] h-[44px] text-white cursor-pointer
+          bg-primary hover:bg-hvr flex justify-center items-center flex xl:hidden"
+        >Contact <span class="text-[25px] rotate-45 flex"><i class='bx bx-up-arrow-alt'></i></span>
+        </button>
+      </div>
+       
+    </div>
+
 
 
     
