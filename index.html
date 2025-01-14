@@ -43,34 +43,37 @@
          <!-- nav links -->
           <ul class="flex items-center gap-[40px] hidden md:flex
            uppercase font-medium text-neutral700" >
-            <li><a href="#about">About</a></li>
-            <li><a href="#servics">Services</a></li>
-            <li><a href="#work">Ourwork</a></li>
+            <li class="hover:text-primary/80"><a href="#about">About</a></li>
+            <li class="hover:text-primary/80"><a href="#services">Services</a></li>
+            <li class="hover:text-primary/80"><a href="#work">Ourwork</a></li>
              <!-- button -->
-             <div>
+             <div><a href="#contact">
                 <button class="button w-[138px] h-[44px] text-white
                   bg-primary hover:bg-hvr flex  justify-center items-center"
                 >Contact <span class="text-[25px] rotate-45"><i class='bx bx-up-arrow-alt'></i></span>
                 </button>
+                  </a>
             </div>
           </ul>
           <!-- mob nav links-->
           <ul id="navLinks" class="flex flex-col absolute top-[-100%] left-0 right-0' mx-auto md:hidden
             w-full h-[60vh] items-center justify-center gap-[40px] bg-neutral z-10
             uppercase font-medium text-[white]" >
-             <li><a href="#">About</a></li>
-             <li><a href="#">Services</a></li>
-             <li><a href="#">Ourwork</a></li>
+             <li class="hover:text-primary/80"><a href="#about">About</a></li>
+             <li class="hover:text-primary/80"><a href="#services">Services</a></li>
+             <li class="hover:text-primary/80"><a href="#work">Ourwork</a></li>
              <!-- Close Icon -->
              <span class="absolute top-4 right-5 text-[35px] cursor-pointer" id="closeIcon">
                 <i class='bx bx-x'></i>
             </span>
             <!-- button -->
             <div>
+              <a href="#contact">
                 <button class="button w-[138px] h-[44px] text-white cursor-pointer
                   bg-primary hover:bg-hvr flex  justify-center items-center"
                 >Contact <span class="text-[25px] rotate-45"><i class='bx bx-up-arrow-alt'></i></span>
                 </button>
+              </a>
             </div>
          </ul>  
           <!-- menu icon -->
@@ -88,13 +91,15 @@
          We turn your empty house to a lovely home, making the compact spaces  with sapce saving furnitures. Making the unique tastes of yours into reality! </p>
     </div>
     <!-- hero img -->
-     <div class="w-full h-[640px] mt-[100px] relative">
+     <div class="w-full h-[640px] mt-[100px] relative ">
         <img src="./assets/img/hero-image.png" class="object-cover object-center w-full h-full" alt="">
-        <div hidden class="xl:flex"><img src="./assets/img/get-in-touch.png" 
-          class="absolute top-[-80px] left-[70px] w-[130px] getInTouch" alt="get in touch ">
+        <div hidden class="xl:flex "><a href="#contact"><img src="./assets/img/get-in-touch.png" 
+          class="absolute top-[-80px] left-[70px] w-[130px] cursor-pointer getInTouch duration-300" alt="get in touch "></a>
         </div>
         <div class="xl:hidden ">
-          <img src="./assets/img/get-in-touch.png" class=" getInTouch w-[130px] mx-auto absolute top-[-80px] right-0  left-0" alt="get in touch">
+          <a href="#contact">
+          <img src="./assets/img/get-in-touch.png" class=" getInTouch w-[130px] mx-auto absolute 
+          top-[-80px] right-0  left-0" alt="get in touch"></a>
         </div>
      </div>
      <!-- AWARDS SECTION -->
@@ -183,7 +188,7 @@
     </div>
 </div>
 <!-- SERVICES SECTION -->
-  <div class="container px-2 mt-[100px]">
+  <div class="container px-2 mt-[100px]" id="services">
     <div>
       <div class="flex items-center gap-3">
         <div class="w-[80px] h-[1px] bg-primary300"></div> 
@@ -191,7 +196,7 @@
       </div>
       <h1 class="text-3xl md:text-5xl mt-5 w-full md:w-[650px]
        font-[500] font-serif overflow-hidden text-neutral">
-       We provide the<i>best solutions</i> <br>
+       We provide the <i>best solutions</i> <br>
        for your dream home</h1>
       </div>
       <!-- services -->
@@ -235,7 +240,7 @@
        </div>
     </div>
     <!--RECENT WORKS SECTION -->
-    <div class="container px-2 grid grid-cols-1 border-b pb-10
+    <div id="work" class="container px-2 grid grid-cols-1 border-b p-10
      xl:grid-cols-2 place-items-center overflow-hidden">
       <div>
         <!-- Title Recent -->
@@ -258,7 +263,7 @@
           </div>
 
           <div class="my-0 xl:my-20">
-            <button class="button w-[158px] h-[44px] text-white cursor-pointer
+            <button class="button w-[158px] h-[44px] text-white cursor-pointer font-[500]
               bg-primary hover:bg-hvr flex justify-center items-center hidden xl:flex"
             >Contact <span class="text-[25px] rotate-45 flex"><i class='bx bx-up-arrow-alt'></i></span>
             </button>
@@ -284,13 +289,52 @@
           </div>
        </div>
        <div class="my-30">
-        <button class="button w-[158px] h-[44px] text-white cursor-pointer
-          bg-primary hover:bg-hvr flex justify-center items-center flex xl:hidden"
-        >Contact <span class="text-[25px] rotate-45 flex"><i class='bx bx-up-arrow-alt'></i></span>
+        <button class="button w-[158px] h-[44px] text-white cursor-pointer font-[500]
+          bg-primary hover:bg-hvr flex justify-center items-center flex xl:hidden">
+          Contact <span class="text-[25px] rotate-45 flex"><i class='bx bx-up-arrow-alt'></i></span>
         </button>
       </div>
-       
     </div>
+    </div>
+    <!-- CONTACT SECTION -->
+     <div class="container grid grid-cols-1 border-b pb-10 px-2
+      md:grid-cols-2 my-10 place-items-start md:place-items-center text-neutral">
+        <div>
+            <h1 class="text-3xl md:text-4xl w-full md:w-[400px]">Kick-start your dream home with us</h1>
+            <br><p class="text-[20px] md:text-[30px]  ">Send us a hi</p>
+            <div class="ml-[1px] w-[109px] md:w-[160px] h-[1px] bg-primary"></div>
+        </div>
+        <div>
+            <h1 class="text-[25px] mt-5 md:mt-0">Brooklyn, New York</h1>
+            <p class="my-5">962 Fifth Avenue Str, 3rd Floor-Trump <br>
+               Building NY 10006, United State.</p>
+            
+            <p class="">Email us at</p>
+            <h1 class="text-[20px] md:text-2xl text-primary">hello@stamariaecho@gmail.com</h1>
+
+            <p class="mt-5">If you're hurry, quick call for us</p>
+            <h1 class="text-[20px] md:text-2xl text-primary">09074015774</h1>
+
+        </div>
+     </div>
+     <!-- FOOTER SECTION -->
+      <div id="contact" class="container flex flex-col-reverse md:flex-row mb-10
+      items-center justify-center md:justify-between  gap-3 h-[100px] px-2 ">
+        <p class="text-neutral">© 2025 Inteo - Award winning studio. Made with love by echo</p>
+
+        <div class="flex items-center gap-5 text-neutral overflow-hidden ">
+          <h1 class="text-[20px font-[500] hidden sm:flex" >CONNECT</h1>
+          <div class="h-[1px] w-[50px] bg-primary hidden sm:flex"></div>
+          <span class="size-[40px] border rounded-full grid place-items-center">
+            <img src="./assets/img/ig.png" class="w-[20px] hover:scale-110 duration-300 cursor-pointer" alt="fb"></span>
+          <span class="size-[40px] border rounded-full grid place-items-center">
+            <img src="./assets/img/fb.png" class="w-[20px] hover:scale-110 duration-300 cursor-pointer" alt="fb"></span>
+          <span class="size-[40px] border rounded-full grid place-items-center">
+            <img src="./assets/img/yt.png" class="w-[20px] hover:scale-110 duration-300 cursor-pointer" alt="fb"></span>
+          <span class="size-[40px] border rounded-full grid place-items-center">
+            <img src="./assets/img/twitter.png" class="w-[20px] hover:scale-110 duration-300 cursor-pointer" alt="fb"></span>
+          </div>
+      </div>
 
 
 
